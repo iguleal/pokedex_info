@@ -1,0 +1,2 @@
+# pokedex_info
+ 

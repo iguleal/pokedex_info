@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_home"
+    android:background="#FA4343">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_poke"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_poke"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="32dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_android_black_24dp"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_poke_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:layout_margin="16dp"
+                tools:text="#001"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_poke" />
+
+            <TextView
+                android:id="@+id/txt_poke_name"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="16dp"
+                android:maxLines="1"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_poke_id"
+                tools:text="Bulbasaur" />
+
+            <Button
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt_poke_name"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:drawableStart="@drawable/ic_android_black_24dp"
+                app:layout_constraintStart_toStartOf="@id/txt_poke_name"
+                android:id="@+id/btn_type1"/>
+
+            <Button
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt_poke_name"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:drawableStart="@drawable/ic_android_black_24dp"
+                app:layout_constraintStart_toEndOf="@id/btn_type1"
+                android:layout_marginStart="8dp"
+                android:id="@+id/btn_type2"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
