@@ -19,7 +19,7 @@ class PokemonAdapter(private val pokemon: Pokemon) : Item<PokemonAdapter.Pokemon
         Picasso.get().load(pokemon.imgUrl).into(imgPoke)
 
         viewHolder.itemView.findViewById<TextView>(R.id.txt_poke_id).text = pokemon.formattedNumber
-        viewHolder.itemView.findViewById<TextView>(R.id.txt_poke_name).text = pokemon.name
+        viewHolder.itemView.findViewById<TextView>(R.id.txt_poke_name).text = pokemon.name.replaceFirstChar { it.uppercase() }
 
         viewHolder.itemView.findViewById<Button>(R.id.btn_type1).text = pokemon.types[0].name
 
@@ -27,6 +27,7 @@ class PokemonAdapter(private val pokemon: Pokemon) : Item<PokemonAdapter.Pokemon
 
         if (pokemon.types.size == 2) {
             type2.text = pokemon.types[1].name
+            type2.visibility = View.VISIBLE
         } else {
             type2.visibility = View.GONE
         }

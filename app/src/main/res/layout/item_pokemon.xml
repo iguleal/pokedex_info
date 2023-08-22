@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="@layout/fragment_home"
     android:background="#FA4343">
 
     <androidx.cardview.widget.CardView

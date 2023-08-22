@@ -2,9 +2,11 @@ package com.example.pokedexinfo.view
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.pokedexinfo.R
 import com.example.pokedexinfo.databinding.ActivityMainBinding
 import com.example.pokedexinfo.presentation.MainPresenter
 import com.xwray.groupie.GroupieAdapter

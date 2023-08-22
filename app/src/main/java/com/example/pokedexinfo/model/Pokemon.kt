@@ -5,7 +5,7 @@ data class Pokemon(
     val name: String,
     val types: List<PokemonType>
 ){
-    val formattedNumber = id.toString().padStart(3, '0')
+    val formattedNumber ="#${ id.toString().padStart(3, '0')}"
 
     val imgUrl: String = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${id}.png"
 }
