@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- shades of gray -->
+    <color name="gray_100">#E6E6E6</color>
+    <color name="gray_200">#919AA2</color>
+    <color name="gray_400">#5A5465</color>
+    <color name="gray_500">#333333</color>
+
+    <!-- shades of blue -->
+    <color name="blue_200">#89AAE3</color>
+    <color name="blue_300">#5090D6</color>
+    <color name="blue_500">#0B6DC3</color>
+    <color name="blue_600">#173EA5</color>
+    <color name="blue_800">#000029</color>
+
+    <!-- shades of teal -->
+    <color name="teal_200">#73CEC0</color>
+    <color name="teal_500">#5A8EA2</color>
+    <color name="teal_700">#0097A7</color>
+
+    <!-- shades of yellow -->
+    <color name="yellow_100">#C5B78C</color>
+    <color name="yellow_500">#F4D23C</color>
+
+    <!-- shades of green -->
+    <color name="green_500">#91C12F</color>
+    <color name="green_700">#63BC5A</color>
+
+    <!-- shades of purple -->
+    <color name="purple_400">#5269AD</color>
+
+    <!-- shades of pink -->
+    <color name="pink_500">#EC8FE6</color>
+
+    <!-- shades of lilac -->
+    <color name="lilac_200">#B567CE</color>
+
+    <!-- shades of orange -->
+    <color name="orange_500">#FF9D55</color>
+    <color name="orange_700">#D97845</color>
+
+    <!-- shades of red -->
+    <color name="red_300">#FA7179</color>
+    <color name="red_400">#CE416B</color>
 </resources>

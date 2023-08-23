@@ -14,7 +14,7 @@ class MainPresenter(
     private val dataSource: PokemonRemoteDataSource = PokemonRemoteDataSource()
 ) : ListPokemonCallback {
 
-    suspend fun findAllPokemon() {
+    fun findAllPokemon() {
         val scope = CoroutineScope(Dispatchers.Main)
         view.visibilityProgressBar(true)
         scope.launch {

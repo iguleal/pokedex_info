@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F44343"
-    tools:context=".view.HomeFragment">
+    android:background="#F44343">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_home"

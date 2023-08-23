@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val adapter = GroupieAdapter()
     private val presenter = MainPresenter(this)
-    private val scope = CoroutineScope(Dispatchers.Main)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,11 +28,8 @@ class MainActivity : AppCompatActivity() {
         binding.rvHome.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         binding.rvHome.adapter = adapter
 
-        if (adapter.itemCount == 0) {
-            scope.launch {
-                presenter.findAllPokemon()
-            }
-        }
+        if (adapter.itemCount == 0) presenter.findAllPokemon()
+
     }
 
     fun showPokemon(pokemonAdapter: PokemonAdapter) {
