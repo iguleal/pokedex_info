@@ -10,7 +10,7 @@
         android:id="@+id/img_poke"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:contentDescription="@null"
         android:cropToPadding="true"
         android:src="@drawable/ic_android_black_24dp"
@@ -25,10 +25,10 @@
         android:id="@+id/txt_poke_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_poke"
         tools:text="#001" />
 
     <TextView
@@ -37,12 +37,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="8dp"
-        android:layout_marginTop="8dp"
+        android:gravity="center"
         android:maxLines="1"
         android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_poke"
+        app:layout_constraintTop_toBottomOf="@+id/txt_poke_id"
         tools:text="Bulbasaur" />
 
     <Button
@@ -50,6 +50,7 @@
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:clickable="false"
+        app:layout_constraintEnd_toStartOf="@id/btn_type2"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/txt_poke_name"
@@ -61,6 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/btn_type1"
