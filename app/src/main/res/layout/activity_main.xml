@@ -4,31 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F44343">
+    android:background="#FD3030">
+
+    <ImageView
+        android:id="@+id/img_bg_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:src="@drawable/pokedex_bg_top"
+        app:layout_constraintBottom_toTopOf="@id/img_bg_mid"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_bg_mid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:src="@drawable/pokedex_bg_mid"
+        app:layout_constraintBottom_toTopOf="@id/img_bg_bot"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bg_top"/>
+
+    <ImageView
+        android:id="@+id/img_bg_bot"
+        android:layout_width="0dp"
+        android:layout_height="128dp"
+        android:contentDescription="@null"
+        android:src="@drawable/pokedex_bg_bot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_bg_mid" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_home"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="8dp"
+        app:layout_constraintDimensionRatio="9:11"
+        app:layout_constraintBottom_toTopOf="@id/img_bg_bot"
         tools:listitem="@layout/item_pokemon"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#f00"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/baseline_circle_24"
-        app:layout_constraintEnd_toEndOf="@id/view"
-        app:layout_constraintBottom_toBottomOf="@id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        android:layout_marginEnd="16dp"/>
+        app:layout_constraintEnd_toEndOf="@id/img_bg_mid"
+        app:layout_constraintStart_toStartOf="@id/img_bg_mid"
+        app:layout_constraintTop_toTopOf="@id/img_bg_mid" />
 
     <ProgressBar
         android:layout_width="50dp"
@@ -41,5 +69,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/rv_home"
         tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_made"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/jetbrains_mono_semibold"
+        android:text="@string/made_by"
+        android:textAlignment="center"
+        android:textColor="#104302"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg_bot"
+        app:layout_constraintEnd_toEndOf="@id/img_bg_bot"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="@id/img_bg_bot"
+        app:layout_constraintTop_toTopOf="@id/img_bg_bot"
+        app:layout_constraintVertical_bias="0.676" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
