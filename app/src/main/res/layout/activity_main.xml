@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FD3030">
+    android:background="@color/red">
 
     <ImageView
         android:id="@+id/img_bg_top"
@@ -64,6 +64,7 @@
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
         android:visibility="gone"
+        android:indeterminateTint="@color/red"
         app:layout_constraintBottom_toBottomOf="@+id/rv_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

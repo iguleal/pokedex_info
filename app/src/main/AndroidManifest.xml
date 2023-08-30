@@ -19,7 +19,7 @@
             android:name=".view.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.PokeDexInfo.NoActionBar">
+            android:theme="@style/Theme.PokeDexInfo.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

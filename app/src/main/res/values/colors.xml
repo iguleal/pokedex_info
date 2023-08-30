@@ -3,6 +3,7 @@
 
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
+    <color name="red">#FD3030</color>
 
     <!-- shades of gray -->
     <color name="gray_100">#E6E6E6</color>
